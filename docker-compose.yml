@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  postgres-mec-dev:
+    image: postgres:12
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: dev
+      POSTGRES_DB: mec
+      TZ: "Europe/Warsaw"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    ports:
+      - 5432:5432
+volumes:
+  db-data:
+    driver: local
