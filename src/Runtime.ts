@@ -38,7 +38,7 @@ export class Runtime {
                 stockProductId: product.productId.toString(),
                 stock: product.stock
             }
-            //await repo.addProduct(productToAdd); 
+            await repo.addProduct(productToAdd); 
             console.log(`product ${product.name} added to database`)  
            } catch (err) {
                 console.log(err);
