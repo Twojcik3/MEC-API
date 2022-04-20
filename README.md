@@ -1,4 +1,5 @@
 # MEC-API
 
-yarn install
-yarn dev
+1.  yarn install
+2.  yarn typeorm migration:run
+3.  yarn dev
